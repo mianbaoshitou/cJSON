@@ -47,6 +47,7 @@ if (ENABLE_CUSTOM_COMPILER_FLAGS)
             -Wmissing-variable-declarations
             -Wused-but-marked-unused
             -Wswitch-enum
+            -fstack-check=generic
         )
     elseif("${CMAKE_C_COMPILER_ID}" STREQUAL "MSVC")
         list(APPEND custom_compiler_flags
